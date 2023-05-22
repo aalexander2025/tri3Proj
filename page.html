@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lookGood.css">
+    <link rel="ico" href="favicon.ico">
+    
+    <title>Chat Page!</title>
+</head>
+<body>
+
+    <div id="control"> <!--Input div-->
+
+        <div id="checkTo"> <!--messages To User-->
+            <div class="panelT">Message To User</div>
+            <form action="javascript: searchMessageTo()" method="get">
+                To: <input type="text" placeholder="search user" id="st"><br><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <div id="checkFrom"> <!--Messages From User-->
+            <div class="panelT">Message From User</div>
+            <form action="javascript: searchMessageFrom()" method="get">
+                From: <input type="text" placeholder="search user" id="sf"><br><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <div id="newMessage"> <!--Send a Message To User-->
+            <div class="panelT">Send Message</div>
+            <form action="javascript: sendMessage()" method="get">
+                To: <input type="text" id="to">
+                <br>From: <input type="text" id="fm">
+                <br>Message: 
+                <br><textarea id="ta" style="width: 30ch; height: 10ch; resize: none;"></textarea><br>
+                <br><input type="submit" value="submit">
+                <div id="send"></div>
+            </form>
+        </div>
+
+        <div id="newUser"> <!--New User Input-->
+            <div class="panelT">New User</div>
+            <form action="javascript: newUsers()" method="get">
+               Username:<input type="text" id="un"><br>
+               Password:<input type="password" id="pw"><br>
+               Email:<input type="text"id="em"><br>
+               First Name:<input type="text" id="fn"><br>
+               Last Name:<input type="text" id="ln"><br><br>
+               <input type="submit" value="Done!"><span id="check" style="margin: 5px;"></span>  
+            </form>
+        </div>  
+
+    </div>
+    
+    <div id="report"><!--Output for messages-->
+    </div>
+
+    <!--javacript for the form actions-->
+    <script src="control.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#control {
+    /* background-color: #292a2d; */
+    border-radius: 4px;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    color: white;
+    background: #303236;
+    box-shadow: -12px -12px 30px #000000;
+
+}
+
+#report {
+    color: white;
+    background-color: #202124;
+    height: 100%;
+    width: 100%;
+
+}
+.panelT {
+    padding: 0;
+    margin: 0;
+    color: red;
+    text-align: center;
+}
+
+/*	NOTE: This, combined with the mods to the input[type=text] CSS, make the
+    fields of the form all line up on the right border (0px from the right)
+*/
+#checkTo, #checkFrom, #newUser, #newMessage {
+    border: 2px solid #3f4042;
+    /*position: relative;*/
+    margin: 10px;
+    padding: 5px;
+    
+    
+}
+
+/*	This, with the relative positioning of the panels (see above) is
+    one way to get the inputs to line up all nicely and flush against
+    the right hand side of the panels.
+    Position absolute positions elements relative to their nearest
+    positioned ancestor so this is putting items 0px from the right
+    hand side of the panel divs...lines them up nicely.
+*/
+input:not([type=submit]) {
+    border-radius: 4px;
+    background: #303236;
+    box-shadow: inset 0.5px 0.5px 2px #0d0d0e,
+                inset -0.5px -0.5px 2px #33353a;
+    border: none;
+    color: white;
+    float: right;
+
+}
+
+textarea{
+    background: #303236;
+    box-shadow: inset 0.5px 0.5px 2px #0d0d0e,
+                inset -0.5px -0.5px 2px #33353a;
+    border: none;
+    color: white;
+
+}

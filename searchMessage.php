@@ -26,7 +26,7 @@
 
 
 
-        print "<style> table, th, td {border: none;border-spacing: 2px;} </style>";
+        
 
         print "<table><tr><th>To:</th><th>From:</th><th>Message:</th></tr>";
 

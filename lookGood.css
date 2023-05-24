@@ -2,11 +2,12 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    background-color:  #202124 ;
 }
 #control {
-    /* background-color: #292a2d; */
+    flex-grow: inherit;
     border-radius: 4px;
-    height: 100%;
+    height: 100vh;
     float: left;
     padding: 10px;
     color: white;
@@ -15,11 +16,21 @@ html, body {
 
 }
 
-#report {
-    color: white;
-    background-color: #202124;
+#row{
+    background: #3f4042;
+    width: 300px;
     height: 100%;
-    width: 100%;
+    word-wrap: break-word;
+}
+
+#report {
+    word-wrap: normal;
+    display: flex;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    background-color: #202124;
+    
 
 }
 .panelT {

@@ -40,7 +40,7 @@ function searchMessageTo(){
     /**concatinating to 'url' */
     url += st + type;
     /**send to httpGetAsync() */
-    httpGetAsync(url, "report"); 
+    httpGetAsync(url, "row"); 
 }
 
 /**messages from function */
@@ -54,7 +54,7 @@ function searchMessageFrom(){
     /**concatinating to 'url' */
     url += st + type;
     /**send to httpGetAsync() */
-    httpGetAsync(url, "report"); 
+    httpGetAsync(url, "row"); 
 }
 
 /**asyc function */

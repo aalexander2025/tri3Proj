@@ -24,8 +24,18 @@ html, body {
 
 }
 
+th{
+    color: #19cc6e;
+}
+
+input[type=submit]{
+    color: #1c73ff;
+    background-color:#303236;
+    font-family: theFont;
+}
+
 td{
-    
+    color: white;
     border: solid 1px black;
     max-width: 50ch;
     min-width: 6ch;
@@ -52,10 +62,10 @@ td{
     
 
 }
+
 .panelT {
-    padding: 0;
-    margin: 0;
-    color: red;
+    padding: 2px;
+    margin: 2px;
     text-align: center;
 }
 

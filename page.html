@@ -14,7 +14,7 @@
     <div id="control"> <!--Input div-->
 
         <div id="checkTo"> <!--messages To User-->
-            <div class="panelT">Message To User</div>
+            <div class="panelT" style="color: red;";>Message To User</div>
             <form action="javascript: searchMessageTo()" method="get">
                 To: <input type="text" placeholder="search user" id="st"><br><br>
                 <input type="submit" value="Search">
@@ -22,7 +22,7 @@
         </div>
 
         <div id="checkFrom"> <!--Messages From User-->
-            <div class="panelT">Message From User</div>
+            <div class="panelT" style="color: #6ed5fe;";>Message From User</div>
             <form action="javascript: searchMessageFrom()" method="get">
                 From: <input type="text" placeholder="search user" id="sf"><br><br>
                 <input type="submit" value="Search">
@@ -30,7 +30,7 @@
         </div>
 
         <div id="newMessage"> <!--Send a Message To User-->
-            <div class="panelT">Send Message</div>
+            <div class="panelT" style="color: #ffca28;">Send Message</div>
             <form action="javascript: sendMessage()" method="get">
                 To: <input type="text" id="to">
                 <br>From: <input type="text" id="fm">
@@ -42,7 +42,7 @@
         </div>
 
         <div id="newUser"> <!--New User Input-->
-            <div class="panelT">New User</div>
+            <div class="panelT" style="color: #f497c8">New User</div>
             <form action="javascript: newUsers()" method="get">
                Username:<input type="text" id="un"><br>
                Password:<input type="password" id="pw"><br>
@@ -56,7 +56,7 @@
     </div>
     
     <div id="report"><!--Output for messages-->
-        <div id="row">
+        <div id="row" style="color:#e98f3a">
             Welcome to CHAT PAGE!!
         </div>
     </div>
